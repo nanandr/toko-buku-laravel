@@ -1,0 +1,1 @@
+<footer>Copyright by Toko Buku 2023</footer>
