@@ -58,11 +58,13 @@ input{
     border: solid #aaa 1px;
 }
 nav{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     background-color: white;
     padding: 16px;
     margin: 0px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,6 +204,9 @@ footer{
     background-color: #aaa !important;
     color: #eee !important;
 }
+.unavailable img{
+    filter: grayscale(100%);
+}
 .unavailable:hover{
     background-image: none;
     background-color: #aaa !important;
@@ -211,6 +216,7 @@ footer{
 
 ::-webkit-scrollbar{
     width: 5px;
+    height: 5px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: crimson;

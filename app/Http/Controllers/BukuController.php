@@ -15,7 +15,7 @@ class BukuController extends Controller
     }
     public function form(){
         $kategori = Kategori::all();
-        return view('page/buku/add', ['kategori' => $kategori]);
+        return view('page/buku/add', ['kategori' => $kategori, 'fillable' => array('judul', 'pengarang', 'penerbit', 'deskripsi'), 'numberFillable' => array('isbn', 'edisi', 'stok', 'harga')]);
     }
     public function add(Request $request){
         // $this->validate([
